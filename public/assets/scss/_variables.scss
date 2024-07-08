@@ -1,0 +1,40 @@
+// Color
+$body-color: #5B5B98;
+$primary: #757FEF; 
+$secondary: #818093;
+$info: #2DB6F5;
+$success: #00B69B;
+$warning: #FFBC2B;
+$danger: #EE368C;
+$light: #E7EBF5;
+$dark: #260944;
+$border-color: #EEF0F6;
+$body-bg: #F5F7FA;
+$gray-light: #A9A9C8;
+$border-gray-light: #F7FAFF;
+$gray-div: #f7f8f7;
+$gray-div2: #f7f7fc;
+$gray-div3: #FAFAFA;
+$gray-div4: #F3F6F9;
+$gray-div5: #F2F6F8;
+$gray-div6: #F5F6FA;
+$gray-div7: #EDEFF5;
+$gray-div8: #F7F8F9;
+$primary-div: #8676ff; 
+$transition: all ease .5s;
+$box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$body-font-family: 'Open Sans', sans-serif;
+$heading-font-family: 'Raleway', sans-serif;
+
+// Font Size
+$font-size-root: null;
+$font-size-base: .94rem; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * .875;
+$font-size-lg: $font-size-base * 1.25;
+
+$h1-font-size: $font-size-base * 2.5; // Updated 43.2px
+$h2-font-size: $font-size-base * 2.3; // Updated 36.8px
+$h3-font-size: $font-size-base * 1.8; // Updated 28.8px
+$h4-font-size: $font-size-base * 1.4; // Updated 22.4px
+$h5-font-size: $font-size-base * 1.1; // Updated 17.6px
+$h6-font-size: $font-size-base; // Updated 16px

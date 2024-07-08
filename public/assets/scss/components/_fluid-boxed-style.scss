@@ -1,0 +1,19 @@
+/* Fluid & Boxed Area Style
+============================================*/
+[boxed-style-data-theme=boxed-style-boxed] {
+    .fluid-boxed-btn {
+        background-color: $primary;
+    }
+    .container-fluid {
+        max-width: 1632px;
+    }
+    .stats-box p {
+        font-size: 13px;
+    }
+    .fluid {
+        display: inline-block;
+    }
+    .boxed {
+        display: none;
+    }
+}

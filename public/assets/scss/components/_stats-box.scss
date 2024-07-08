@@ -1,0 +1,363 @@
+/* Stats Box Area Style
+============================================*/
+.stats-box {
+    .icon {
+        width: 62px;
+        height: 62px;
+        line-height: 70px;
+        text-align: center;
+        border-radius: 8px;
+        background: rgba(85, 112, 241, 0.12);  
+        i {
+            font-size: 35px;
+            color: $primary;
+        }  
+    }
+    h3 {
+        sub {
+            font-size: 15px;
+            color: #38f261;
+            bottom: 0;
+            i {
+                font-size: 20px;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+    p {
+        font-size: 16px;
+        span {
+            color: $success;
+        }
+    }
+    .svg-primary {
+        svg {
+            stroke: $primary;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .svg-success {
+        svg {
+            stroke: $success;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .svg-danger {
+        svg {
+            stroke: $danger;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .svg-warning {
+        svg {
+            stroke: $warning;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &.style-two {
+        .icon {
+            width: 85px;
+            height: 85px;
+            line-height: 97px;
+            text-align: center;
+            background: rgba(117, 127, 239, 0.08);  
+            i {
+                font-size: 50px;
+                color: $primary;
+                transition: $transition;
+            }  
+            &.bg-00b69b {
+                background-color: rgba(0, 182, 155, 0.08);
+                i {
+                    color: #00b69b;
+                }
+                &:hover {
+                    background-color: #00b69b;
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+            &.bg-ee368c {
+                background-color: rgba(238, 54, 140, 0.08);
+                i {
+                    color: #ee368c;
+                }
+                &:hover {
+                    background-color: #ee368c;
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+            &.bg-2db6f5 {
+                background-color: rgba(45, 182, 245, 0.08);
+                i {
+                    color: #2db6f5;
+                }
+                &:hover {
+                    background-color: #2db6f5;
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+            &.bg-ff8a54 {
+                background-color: rgba(255, 138, 84, 0.08);
+                i {
+                    color: #ff8a54;
+                }
+                &:hover {
+                    background-color: #ff8a54;
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    &.style-three {
+        p {
+            font-size: 15px;
+        }
+        .icon {
+            background-color: $primary;
+            i {
+                color: $white;
+            }
+        }
+        .up-down {
+            i {
+                position: relative;
+                top: 3px;
+            }
+        }
+    }
+    &.style-four {
+        .svg-primary {
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+        .svg-success {
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+        .svg-danger {
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    &.style-five {
+        &.bg-eef0fa {
+            background-color: #eef0fa;
+        }
+        &.bg-f8eee2 {
+            background-color: #f8eee2;
+            i {
+                background-color: $warning;
+            }
+        }
+        &.bg-ddf0f1 {
+            background-color: #ddf0f1;
+            i {
+                background-color: $info;
+            }
+        }
+        &.bg-fbeaea {
+            background-color: #fbeaea;
+            i {
+                background-color: $danger;
+            }
+        }
+        i {
+            width: 48px;
+            height: 48px;
+            line-height: 48px;
+            border-radius: 5px;
+            background-color: $primary;
+            border-radius: 5px;
+            text-align: center;
+            color: $white;
+            font-size: 24px;
+        }
+    }
+    &.style-seven {
+        .icons {
+            i {
+                font-size: 40px;
+                color: #A9A9C8;
+            }
+        }
+        p {
+            i {
+                font-size: 16px;
+                font-weight: normal;
+            }
+        }
+    }
+    &.style-eight {
+        .profile-img {
+            margin-top: -50px;
+            position: relative;
+            z-index: 2;
+        }
+        .mt-minus {
+            margin-top: -15px;
+        }
+    }
+    &:hover {
+        .icon {
+            background-color: $primary;
+            border-radius: 50px;
+            i {
+                color: $white;
+            }
+        }
+        &.style-two {
+            .icon {
+                &.bg-00b69b {
+                    background-color: #00b69b;
+                    i {
+                        color: $white;
+                    }
+                }
+                &.bg-ee368c {
+                    background-color: #ee368c;
+                    i {
+                        color: $white;
+                    }
+                }
+                &.bg-2db6f5 {
+                    background-color: #2db6f5;
+                    i {
+                        color: $white;
+                    }
+                }
+                &.bg-ff8a54 {
+                    background-color: #ff8a54;
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.visit-income-farol {
+    .icon {
+        width: 46px;
+        height: 54px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 8px;
+        background: $white;
+        box-shadow: 0px 4px 20px 0px rgba(117, 127, 239, 0.15);
+        transition: $transition;
+        i {
+            font-size: 24px;
+            color: $primary;
+            transition: $transition;
+        }
+    }
+    ul {
+        li {
+            &:hover {
+                .icon {
+                    background-color: $primary;
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .stats-box {
+        p {
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1399px) {
+
+    .stats-box {
+        &.style-four {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1400px to Max width 1799px */
+@media only screen and (min-width : 1400px) and (max-width : 1799px) {
+
+    .stats-box {
+        p {
+            font-size: 12px;
+        }
+        &.style-two {
+            .p-4 {
+                padding: 15px !important;
+            }
+            .ms-3 {
+                margin-left: 10px !important;
+            }
+            .icon {
+                width: 50px;
+                height: 50px;
+                line-height: 56.5px;
+                text-align: center;
+                background: rgba(117, 127, 239, 0.08);  
+                i {
+                    font-size: 30px;
+                }  
+            }
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width : 1199px) {
+
+    .stats-box {
+        &.style-two {
+            .p-4 {
+                padding: 15px !important;
+            }
+            .icon {
+                width: 60px;
+                height: 60px;
+                line-height: 68px;
+                text-align: center;
+                background: rgba(117, 127, 239, 0.08);  
+                i {
+                    font-size: 30px;
+                }  
+            }
+        }
+    }
+
+}

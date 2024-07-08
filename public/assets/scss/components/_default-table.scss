@@ -1,0 +1,594 @@
+/* Default Table Area Style
+============================================*/
+.default-table-area {
+   .table-responsive {
+        .table {
+            thead {
+                tr {
+                    th {
+                        background-color: $border-gray-light;
+                        color: $body-color;
+                        font-weight: 600;
+                        font-size: 15px;
+                        padding: 15px 25px;
+                        position: relative;
+                        border: none;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 0;
+                            width: 2px;
+                            height: 17px;
+                            background-color: $light;
+                        }
+                        &:last-child {
+                            &::before {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        background-color: transparent;
+                        color: $body-color;
+                        border-color: $border-gray-light;
+                        padding: 15px 25px;
+                        a {
+                            text-decoration: none;
+                            h6 {
+                                margin-bottom: 0;
+                                margin-left: 10px;
+                                color: $body-color;
+                                transition: $transition;
+                            }
+                            &:hover {
+                                h6 {
+                                    color: $primary;
+                                }
+                            }
+                        }
+                        .badge {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    &.recent-orders {
+        .table-responsive {
+            .table {
+                thead {
+                    tr {
+                        th {
+                            text-align: center;
+                            &:nth-child(1) {
+                                text-align: left;
+                            }
+                            &:nth-child(2) {
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            text-align: center;
+                            &:nth-child(1) {
+                                text-align: left;
+                            }
+                            &:nth-child(2) {
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    &.team-members-list {
+        .table-responsive {
+            .table {
+                thead {
+                    tr {
+                        th {
+                            text-align: center;
+                            &:nth-child(1) {
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            text-align: center;
+                            svg {
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 10px;
+                                stroke: $primary;
+                            }
+                            .editor {
+                                svg {
+                                    stroke: #2DB6F5;
+                                }
+                            }
+                            .admin {
+                                svg {
+                                    stroke: #EE368C;
+                                }
+                            }
+                            .maintainer {
+                                svg {
+                                    stroke: #D45AFF;
+                                }
+                            }
+                            &:nth-child(1) {
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    &.course-list {
+        .table-responsive {
+            .table {
+                tbody {
+                    tr {
+                        td {
+                            padding: 20px 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.project-list {
+        .table-responsive {
+            .table {
+                tbody {
+                    tr {
+                        td {
+                           .progress {
+                                overflow: unset;
+                                border-radius: 50px;
+                                height: 5px;
+                                .count {
+                                   position: absolute;
+                                   top: -16px;
+                                   left: 0; 
+                                   color: $body-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.style-two {
+            .table-responsive {
+                .table {
+                    tbody {
+                        tr {
+                            td {
+                                padding: 22.5px 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.team-members {
+        .table-responsive {
+            .table {
+                tbody {
+                    tr {
+                        td {
+                           padding: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.my-task-list {
+        .table-responsive {
+            .table {
+                thead {
+                    tr {
+                        th {
+                            text-align: center;
+                            &:nth-child(1) {
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            text-align: center;
+                            &:nth-child(1) {
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    &.browser-list {
+        .progress {
+            height: 5px;
+            background-color: #E9EFFC;
+        }
+        .badge {
+            i {
+                font-size: 18px;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+    &.support-status-list {
+        .table-responsive {
+            .table {
+                thead {
+                    tr {
+                        th {
+                            &::before {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            padding: 24px 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.all-projects-list {
+        .table-responsive {
+            .table {
+                tbody {
+                    tr {
+                        td {
+                            .ri-star-line {
+                                position: relative;
+                                top: -1px;
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.currencies-list {
+        .table-responsive {
+            .table tbody {
+                tr {
+                    td {
+                        padding: 18px 25px;
+                    }
+                }
+            }
+        }
+    }
+    &.email-list {
+        .table {
+            width: 1112px;
+        }
+    }
+    &.customers-details-list {
+        .table {
+            width: 1507px;
+        }
+    }
+    &.notification-list {
+        .table-responsive .table {
+            tbody tr td {
+                padding: 25px 25px;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .default-table-area {
+        &.team-members {
+            .table {
+                width: 703px;
+            }
+        }
+        &.browser-list {
+            .table {
+                width: 703px;
+            }
+        }
+        &.support-status-list {
+            .table-responsive {
+                .table tbody {
+                    tr {
+                        td {
+                            padding: 20px 0;
+                        }
+                    }
+                }
+            }
+        }
+        &.mark-as-completed {
+            .table {
+                width: 703px;
+            }
+        }
+    }
+    
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px)  {
+
+    .default-table-area {
+        &.recent-orders {
+            .table {
+                width: 1501px;
+            }
+        }
+        &.all-projects-list {
+            .table {
+                width: 1501px;
+            }
+        }
+        &.orders-activities-list {
+            .table {
+                width: 1501px;
+            }
+        }
+        &.currencies-list {
+            .table {
+                width: 100%;
+            }
+        }
+        &.recent-files-list {
+            .table {
+                width: 1001px;
+            }
+        }
+        &.my-task-list {
+            .table {
+                width: 1100px;
+            }
+        }
+        &.members-list {
+            .table {
+                width: 1200px;
+            }
+        }
+        &.orders-details-info {
+            .table {
+                width: 980px;
+            }
+        }
+    }
+    
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width : 1200px) and (max-width : 1399px) {
+
+    .default-table-area {
+        &.recent-orders {
+            .table {
+                width: 1501px;
+            }
+        }
+        &.project-list {
+            .table {
+                width: 1200px;
+            }
+        }
+        &.all-projects-list {
+            .table {
+                width: 1501px;
+            }
+        }
+        &.orders-activities-list {
+            .table {
+                width: 1501px;
+            }
+        }
+        &.currencies-list {
+            .table {
+                width: 1000px;
+            }
+        }
+        &.recent-files-list {
+            .table {
+                width: 1001px;
+            }
+        }
+        &.my-task-list {
+            .table {
+                width: 1100px;
+            }
+        }
+        &.members-list {
+            .table {
+                width: 1001px;
+            }
+        }
+        &.orders-details-info {
+            .table {
+                width: 980px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1400px to Max width 1799px */
+@media only screen and (min-width : 1400px) and (max-width : 1799px) {
+
+    .default-table-area {
+        &.recent-orders {
+            .table {
+                width: 1501px;
+            }
+        }
+        &.team-members-list {
+            .table {
+                width: 900px;
+            }
+        }
+        &.orders-activities-list {
+            .table {
+                width: 1501px;
+            }
+        }
+        &.currencies-list {
+            .table {
+                width: 1000px;
+            }
+        }
+        &.project-list {
+            .table {
+                width: 1200px;
+            }
+            &.style-two {
+                .table {
+                    width: 1543px;
+                } 
+            }
+        }
+        &.recent-files-list {
+            .table {
+                width: 1001px;
+            }
+        }
+        &.my-task-list {
+            .table {
+                width: 1512px;
+            }
+        }
+        &.members-list {
+            .table {
+                width: 1512px;
+            }
+        }
+        &.orders-details-info {
+            .table {
+                width: 980px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width : 991px) {
+
+    .default-table-area {
+        &.recent-orders {
+            .table {
+                width: 1501px;
+            }
+        }
+        &.team-members-list {
+            .table {
+                width: 900px;
+            }
+        }
+        &.course-list {
+            .table {
+                width: 975px;
+            }
+            .table-responsive {
+                .table tbody {
+                    tr {
+                        td {
+                            padding: 20px 0;
+                        }
+                    }
+                }
+            }
+        }
+        &.project-list {
+            .table {
+                width: 975px;
+            }
+            .table-responsive {
+                .table tbody {
+                    tr {
+                        td {
+                            padding: 20px 15px;
+                        }
+                    }
+                }
+            }
+        }
+        &.my-task-list {
+            .table {
+                width: 900px;
+            }
+        }
+        &.all-projects-list {
+            .table {
+                width: 1501px;
+            }
+        }
+        &.orders-activities-list {
+            .table {
+                width: 1501px;
+            }
+        }
+        &.currencies-list {
+            .table {
+                width: 1000px;
+            }
+        }
+        &.recent-files-list {
+            .table {
+                width: 1001px;
+            }
+        }
+        &.my-task-list {
+            .table {
+                width: 1100px;
+            }
+        }
+        &.members-list {
+            .table {
+                width: 1001px;
+            }
+        }
+        &.orders-details-info {
+            .table {
+                width: 980px;
+            }
+        }
+        &.notification-list {
+            .table {
+                width: 925px;
+            }
+        }
+    }
+
+}

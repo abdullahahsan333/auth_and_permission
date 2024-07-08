@@ -1,0 +1,30 @@
+/* Sales By Locations Area Style
+============================================*/
+#sales_by_locations {
+    width: 100%;
+    height: 385px;
+    overflow: hidden;
+}
+.sales_by_locations {
+    li {
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .progress {
+            overflow: unset;
+            position: relative;
+            border-radius: 50px;
+            height: 5px;
+        }
+        .progress-bar {
+            border-radius: 50px;
+            .count {
+                position: absolute;
+                top: -29px;
+                right: 0;
+                font-size: 15px;
+            }
+        }
+    }
+}

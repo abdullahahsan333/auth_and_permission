@@ -1,0 +1,26 @@
+/* Footer Area Style
+============================================*/
+.footer-area {
+    p {
+        padding: 20px 30px;
+        font-size: 15px;
+        span {
+            font-weight: 600;
+        }
+        a {
+            font-weight: 600;
+        }
+    }
+}
+
+/* Max width 991px */
+@media only screen and (max-width : 991px) {
+
+    .footer-area {
+        p {
+            padding: 10px 10px;
+            font-size: 15px;
+        }
+    }
+
+}

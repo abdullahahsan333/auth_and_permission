@@ -1,0 +1,45 @@
+/* File Manager Area Style
+============================================*/
+.file-wrap {
+    .file-list {
+        margin-bottom: 25px;
+        i {
+            line-height: 1;
+            transition: $transition;
+        }
+        a {
+            &:hover {
+                i {
+                    color: $primary !important;
+                }
+                color: $primary !important;
+            }
+        }
+        ul {
+            margin-left: 35px;
+            margin-top: 21px;
+            li {
+                position: relative;
+                padding-left: 15px;
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 6px;
+                    height: 6px;
+                    background-color: #818093;
+                    border-radius: 50px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

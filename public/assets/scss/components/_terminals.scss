@@ -1,0 +1,69 @@
+/* Terminals Area Style
+============================================*/
+.terminals-chart {
+    max-width: 125px;
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+    .earning {
+        background-color: #757FEF;
+        mix-blend-mode: multiply;
+        filter: drop-shadow(0px 3.0163094997406006px 2.2138051986694336px rgba(132, 13, 226, 0.04)) drop-shadow(0px 7.2486114501953125px 5.32008171081543px rgba(132, 13, 226, 0.06)) drop-shadow(0px 13.648491859436035px 10.017241477966309px rgba(132, 13, 226, 0.07)) drop-shadow(0px 24.346576690673828px 17.869047164916992px rgba(132, 13, 226, 0.08)) drop-shadow(0px 45.537593841552734px 33.422088623046875px rgba(132, 13, 226, 0.10)) drop-shadow(0px 109px 80px rgba(132, 13, 226, 0.14));
+        width: 225px;
+        height: 225px;
+        text-align: center;
+        border-radius: 50%;
+        
+    }
+    .users {
+        background-color: #F765A3;
+        opacity: 0.8;
+        mix-blend-mode: multiply;
+        filter: drop-shadow(0px 2.317220449447632px 1.853776454925537px rgba(255, 43, 43, 0.04)) drop-shadow(0px 5.38771915435791px 4.31017541885376px rgba(255, 43, 43, 0.06)) drop-shadow(0px 9.675094604492188px 7.740076065063477px rgba(255, 43, 43, 0.07)) drop-shadow(0px 16.05707359313965px 12.845659255981445px rgba(255, 43, 43, 0.08)) drop-shadow(0px 26.453489303588867px 21.162790298461914px rgba(255, 43, 43, 0.09)) drop-shadow(0px 46.2330322265625px 36.98642349243164px rgba(255, 43, 43, 0.11)) drop-shadow(0px 100px 80px rgba(255, 43, 43, 0.15));
+        width: 134px;
+        height: 134px;
+        text-align: center;
+        border-radius: 50%;
+        left: -100px !important;
+    }
+    .inactive {
+        background-color: #FF8A54;
+        opacity: 0.8;
+        mix-blend-mode: multiply;
+        width: 87px;
+        height: 87px;
+        text-align: center;
+        border-radius: 50%;
+        top: 186px !important;
+        left: 30px !important;
+    }
+}
+.terminals-legend {
+    margin-top: 130px;
+    li {
+        margin: 0 30px;
+        position: relative;
+        padding-left: 15px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 12px;
+            height: 12px;
+            background-color: #757FEF;
+            border-radius: 5px;
+        }
+        &:nth-child(2) {
+            &::before {
+                background-color: #F765A3;
+            }
+        }
+        &:nth-child(3) {
+            &::before {
+                background-color: #FF8A54;
+            }
+        }
+    }
+}

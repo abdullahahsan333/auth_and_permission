@@ -1,0 +1,82 @@
+/* Calendar Style
+============================================*/
+.calendar-wrap {
+	background-color: $white;
+	border-radius: 0;
+	.fc {
+		.fc-non-business {
+			background-color: transparent;
+		}
+		.fc-toolbar-title {
+			font-size: 16px;
+            font-family: $body-font-family;
+		}
+		.fc-button-primary {
+			background-color: $body-color;
+			color: $white;
+			border: none;
+			text-transform: capitalize;
+			border-radius: 5px;
+			&:hover {
+				background-color: $primary;
+				color: $white;
+			}
+		}
+		.fc-button-group > .fc-button:focus, .fc .fc-button-group > .fc-button:active, .fc .fc-button-group > .fc-button.fc-button-active {
+			border: none;
+			outline: none;
+			box-shadow: none;
+		}
+		.fc-prev-button.fc-button.fc-button-primary {
+			margin-right: 13px;
+		}
+		tbody {
+			tr {
+				th {
+					
+					padding-top: 10px;
+					padding-bottom: 10px;
+					border-color: $gray-div7;
+				}
+			}
+		}
+		.fc-col-header-cell-cushion {
+			color: $dark;
+			font-size: 14px;
+            text-decoration: none;
+            font-weight: 400;
+		}
+		.fc-daygrid-day-top {
+			justify-content: center;
+		}
+	}
+	.fc-theme-standard {
+		.fc-scrollgrid {
+			border-top: none;
+			border-color: $gray-div7;
+		}
+	}
+	.fc-theme-standard td, .fc-theme-standard th {
+		border-color: $gray-div7;
+	}
+	.fc-h-event {
+		background-image: linear-gradient(to bottom, #757fef, #757fef);
+		border: none;
+		text-align: center;
+		font-size: 10px;
+	}
+	.fc-daygrid-day-number {
+        text-decoration: none;
+        color: $dark;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .fc-theme-standard .fc-scrollgrid {
+        border-top: 1px solid $gray-div7;
+    }
+    .fc-button:disabled {
+        background-color: $primary;
+        opacity: 1;
+    }
+}

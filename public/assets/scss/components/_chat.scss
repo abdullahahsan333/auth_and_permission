@@ -1,0 +1,198 @@
+/* Chat Area Style
+============================================*/
+.status-position {
+    top: 2px;
+    right: -5px;
+}
+.status-position2 {
+    bottom: 4px;
+    right: -2px;
+}
+.messages-list {
+    max-height: 319px;
+    li {
+        position: relative;
+        transition: $transition;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 2px;
+            height: 0;
+            background-color: $primary;
+            transition: $transition;
+        }
+        .new {
+            background-color: #FEF5EA;
+            color: $dark;
+            border-radius: 8px;
+            padding: 2px 7px;
+            font-size: 13px;
+        }
+        .count {
+            background-color: #FFCC91;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 50px;
+            display: inline-block;
+            text-align: center;
+            color: $dark;
+            margin-left: 8px;
+            font-size: 13px;
+        }
+        .text-gray-light {
+            font-size: 13px;
+        }
+        p {
+            max-width: 200px;
+        }
+        &.active {
+            background-color: $gray-div3;
+            &::before {
+                height: 100%;
+                bottom: auto;
+                top: 0;
+            }
+        }
+        
+    }
+
+}
+.chat-list {
+    .count {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        text-align: center;
+        display: inline-block;
+        margin-top: 4px;
+    }
+}
+.chat-call-option {
+    li {
+        button {
+            display: inline-block;
+            width: 44px;
+            height: 44px;
+            line-height: 44px;
+            border-radius: 50px;
+            background-color: $gray-div5;
+            transition: $transition;
+            i {
+                color: #818093;
+                transition: $transition;
+            }
+            &:hover {
+                background-color: $primary;
+                i {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+.chat-details {
+    li {
+        max-width: 800px;
+        p {
+            border-radius: 0px 15px 15px 15px;
+            background-color: #F5F6FA;
+            margin-bottom: 0;
+            padding: 14px 25px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .dropdown {
+            &.action-opt {
+                opacity: 0;
+                transition: $transition;
+            }
+        }
+        &.own-chat {
+            p {
+                border-radius: 15px 0 15px 15px;
+                background-color: $primary;
+                color: $white;
+            }
+        }
+        &:hover {
+            .dropdown {
+                &.action-opt {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .messages-list {
+        li {
+            p {
+                max-width: 160px;
+            }
+        }
+    }
+    .chat-call-option {
+        li {
+            button {
+                width: 35px;
+                height: 35px;
+                line-height: 37px;
+                i {
+                    font-size: 18px !important;
+                }
+            }
+        }
+    }
+    .chat-details {
+        li {
+            p {
+                padding: 10px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .chat-call-option {
+        li {
+            button {
+                width: 35px;
+                height: 35px;
+                line-height: 37px;
+                i {
+                    font-size: 18px !important;
+                }
+            }
+        }
+    }
+    .chat-details {
+        li {
+            p {
+                padding: 10px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1400px to Max width 1799px */
+@media only screen and (min-width : 1400px) and (max-width : 1799px) {
+
+    .messages-list {
+        li {
+            p {
+                max-width: 115px;
+            }
+        }
+    }
+
+}

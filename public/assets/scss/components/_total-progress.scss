@@ -1,0 +1,27 @@
+/* Total Progress Area Style
+============================================*/
+.total-progress {
+    li {
+        margin-bottom: 18px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid rgb(247, 250, 255, 0.06);
+        position: relative;
+        padding-left: 18px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50px;
+            background-image: linear-gradient(149deg, #99B8F3 14.61%, #177FCB 130.18%);
+            filter: drop-shadow(0px 2.98685622215271px 13.440853118896484px rgba(126, 172, 235, 0.25));
+        }
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border: none;
+        }
+    }
+}

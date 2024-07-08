@@ -1,0 +1,74 @@
+/* Only Sidebar dark Area Style
+============================================*/
+[sidebar-dark-light-data-theme=sidebar-dark] {
+    .sidebar-area {
+        background-color: #14171c;
+        .logo {
+            .logo-text {
+                color: $white !important;
+            }
+        }
+        .admin {
+            .admin-info {
+                background-color: #14171c;
+                &.border-top {
+                    border-color: #1b212a !important;
+                }
+                .name {
+                    color: $white;
+                }
+            }
+        }
+    }
+    .menu-vertical {
+        .menu-sub {
+            .menu-item {
+                .menu-link {
+                    color: #c5c5c5;
+                    &::before {
+                        background-color: $white;
+                    }
+                    &.active {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .menu-item {
+            &.open {
+                .menu-link {
+                    &.menu-toggle.active {
+                        background-color: #1e2227;
+                    }
+                }
+            }
+            .menu-link {
+                svg {
+                    stroke: $white;
+                    transition: $transition;
+                }
+                span {
+                    color: $white;
+                }
+                &:hover {
+                    background-color: #1e2227;
+                    svg {
+                        stroke: $primary;
+                    }
+                }
+            }
+        }
+    }
+    .menu-vertical .menu-item.open .menu-link.active {
+        background-color: #1e2227;
+    }
+    .sidebar-dark-btn {
+        background-color: $primary;
+    }
+    .light1 {
+        display: inline-block;
+    }
+    .dark1 {
+        display: none;
+    }
+}

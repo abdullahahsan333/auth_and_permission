@@ -1,0 +1,101 @@
+/**
+@File: Escola Template Styles
+
+* This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the template.
+
+This files table contents are outlined below>>>>>
+
+*******************************************
+**/
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+@import "./variables";
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Create your own map
+$custom-colors: (
+    "gray-light": $gray-light,
+    "border-gray-light": $border-gray-light,
+    "gray-div": $gray-div,
+    "gray-div2": $gray-div2,
+    "gray-div3": $gray-div3,
+    "gray-div4": $gray-div4,
+    "gray-div5": $gray-div5,
+    "gray-div6": $gray-div6,
+    "gray-div7": $gray-div7,
+    "primary-div": $primary-div,
+    "body-bg": $body-bg,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$font-sizes: (
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+);
+
+// Required Utilities Parts
+$utilities: (
+    "font-size": (
+        rfs: true,
+        property: font-size,
+        class: fs,
+        values: $font-sizes
+    ),
+    
+);
+
+// Required
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/root";
+
+// Optional Bootstrap components here
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+
+// Required
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Components
+@import "./components/global";
+@import "./components/sidebar-menu";
+@import "./components/main-content";
+@import "./components/header-area";
+@import "./components/footer-area";
+@import "./components/stats-box";
+@import "./components/activity-timeline";
+@import "./components/sales-by-locations";
+@import "./components/default-table";
+@import "./components/pagination";
+@import "./components/total-progress";
+@import "./components/courses";
+@import "./components/chat";
+@import "./components/terminals";
+@import "./components/file-manager";
+@import "./components/compose";
+@import "./components/blog";
+@import "./components/calendar";
+@import "./components/rtl";
+@import "./components/dark-mode";
+@import "./components/sidebar-dark";
+@import "./components/header-dark";
+@import "./components/footer-dark";
+@import "./components/card-style";
+@import "./components/card-bg-style";
+@import "./components/fluid-boxed-style";

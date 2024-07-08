@@ -1,0 +1,81 @@
+/* Only Header dark Area Style
+============================================*/
+[header-dark-light-data-theme=header-dark] {
+    .right-header-content {
+        .header-right-item {
+            .notifications {
+                &.dropdown {
+                    .dropdown-menu {
+                        background-color: #0d1015;
+                        .notification-menu {
+                            border-color: #1b212a !important;
+                        }
+                        h5.border-bottom {
+                            border-color: #1b212a !important;
+                            span {
+                                color: $white;
+                            }
+                        }
+                    }
+                    .btn-secondary {
+                        background-color: #1e2227;
+                    }
+                }
+            }
+            .today-date {
+                background-color: #1e2227;
+                border-color: #1e2227;
+            }
+            .admin-profile {
+                h3 {
+                    color: $white;
+                }
+                .admin-link {
+                    background-color: #0d1015 !important;
+                    li .dropdown-item {
+                        color: #828690 !important;
+                        &:hover {
+                            background-color: #1e2227;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .dropdown-item {
+            h4 {
+                color: $white !important;
+            }
+            p {
+                color: #828690 !important;
+            }
+        }
+    }
+    .header-burger-menu {
+        svg {
+            stroke: $white;
+        }
+    }
+    .header-area {
+        &.bg-white {
+            background-color: #14171c !important;
+        }
+    }
+    .left-header-content ul li .src-form .form-control {
+        background-color: #1e2227 !important;
+        border-color: #1e2227 !important;
+        color: $white !important;
+        &:focus {
+            border-color: $primary !important;
+        }
+    }
+    .header-dark-btn {
+        background-color: $primary;
+    }
+    .light2 {
+        display: inline-block;
+    }
+    .dark2 {
+        display: none;
+    }
+}

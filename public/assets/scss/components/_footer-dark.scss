@@ -1,0 +1,19 @@
+/* Only Footer dark Area Style
+============================================*/
+[footer-dark-light-data-theme=footer-dark] {
+    .footer-area.bg-white {
+        background-color: #14171c !important;
+        p {
+            color: $white;
+        }
+    }
+    .footer-dark-btn {
+        background-color: $primary;
+    }
+    .light3 {
+        display: inline-block;
+    }
+    .dark3 {
+        display: none;
+    }
+}

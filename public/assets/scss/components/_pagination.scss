@@ -1,0 +1,41 @@
+/* Pagination Area Style
+============================================*/
+.pagination {
+    .page-item {
+        margin-right: 7px;
+        .page-link {
+            padding: 6px 12px;
+            border-radius: 4px;
+            border: 1px solid #E2E8F0;
+            background: $white;
+            box-shadow: 0px 1px 2px 0px rgba(15, 23, 42, 0.04);
+            transition: $transition;
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+            &.icon {
+                width: 34.61px;
+                height: 36.56px;
+                line-height: 32.56px;
+                padding: 0;
+                text-align: center;
+            }
+            &.active {
+                background-color: $primary;
+                color: $white;
+                z-index: 0 !important;
+            }
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

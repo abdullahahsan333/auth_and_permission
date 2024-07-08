@@ -1,0 +1,53 @@
+/* Only Radius Square Area Style
+============================================*/
+[card-radius-square-data-theme=card-radius] {
+    .card-style-btn {
+        background-color: $primary;
+    }
+    .card {
+        border-radius: 0 !important;
+    }
+    .rounded-bottom-10 {
+        border-radius: 0;
+    }
+    .rounded-top-10 {
+        border-radius: 0;
+    }
+    .btn {
+        border-radius: 0;
+    }
+    #backtotop {
+        border-radius: 0;
+    }
+    .rounded {
+        border-radius: 0 !important;
+    }
+    .pagination {
+        .page-item {
+            .page-link {
+                border-radius: 0;
+            }
+        }
+    }
+    .form-control {
+        border-radius: 0 !important;
+    }
+    .right-header-content .header-right-item .today-date {
+        border-radius: 0 !important;
+    }
+    .right-header-content .header-right-item .notifications.dropdown .btn-secondary {
+        border-radius: 0;
+    }
+    .menu-vertical .menu-item .menu-link {
+        border-radius: 0;
+    }
+    .settings-btn  {
+        border-radius: 0;
+    }
+    .radius {
+        display: inline-block;
+    }
+    .square {
+        display: none;
+    }
+}

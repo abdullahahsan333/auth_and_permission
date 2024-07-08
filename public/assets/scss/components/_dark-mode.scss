@@ -1,0 +1,547 @@
+/* Dark Mode Area Style
+============================================*/
+[data-theme=dark] {
+    background-color: #0d1015;
+    p {
+        color: #828690 !important;
+    }
+    span {
+        color: #828690;
+    }
+    ul {
+        li {
+            color: #828690;
+        }
+    }
+    ol {
+        li {
+            color: #828690;
+        }
+    }
+    .card {
+        background-color: #14171c !important;
+        &.bg-primary {
+            background-color: $primary !important;
+        }
+    }
+    .dark-btn {
+        background-color: $primary !important;
+    }
+    .bg-white {
+        background-color: #14171c !important;
+    }
+    .sidebar-area {
+        background-color: #14171c;
+    }
+    .header-burger-menu {
+        svg {
+            stroke: $white;
+        }
+    }
+    .form-control {
+        background-color: #1e2227 !important;
+        border-color: #1e2227 !important;
+        color: $white !important;
+        &:focus {
+            border-color: $primary !important;
+        }
+    }
+    .right-header-content {
+        .header-right-item {
+            .notifications {
+                &.dropdown {
+                    .dropdown-menu {
+                        background-color: #0d1015;
+                        .notification-menu {
+                            border-color: #1b212a !important;
+                        }
+                        h5.border-bottom {
+                            border-color: #1b212a !important;
+                            span {
+                                color: $white;
+                            }
+                        }
+                    }
+                    .btn-secondary {
+                        background-color: #1e2227;
+                    }
+                }
+            }
+            .today-date {
+                background-color: #1e2227;
+                border-color: #1e2227;
+            }
+        }
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        color: $white;
+    }
+    .border-bottom {
+        border-color: #252b34 !important;
+    }
+    .default-table-area {
+        .table-responsive {
+            .table {
+                thead {
+                    tr {
+                        th {
+                            background-color: #1d2024;
+                            color: $white;
+                            &::before {
+                                background-color: #252b34;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            color: #828690 !important;
+                            border-color: #1e2024;
+                            a {
+                                h6 {
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pagination {
+        .page-item {
+            .page-link {
+                border-color: #1e2025;
+                background: #1e2125;
+                color: $white;
+                &.active {
+                    background-color: $primary;
+                }
+                &:hover {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+    .border {
+        border-color: #1b212a !important;
+    }
+    .border-top {
+        border-color: #1b212a !important;
+    }
+    .dropdown-item {
+        color: #828690;
+    }
+    .sidebar-area {
+        .logo {
+            .logo-text {
+                color: $white !important;
+            }
+        }
+        .admin {
+            .admin-info {
+                .name {
+                    color: $white;
+                }
+            }
+        }
+    }
+    .menu-vertical {
+        .menu-sub {
+            .menu-item {
+                .menu-link {
+                    color: #c5c5c5;
+                    &::before {
+                        background-color: $white;
+                    }
+                    &.active {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .menu-item {
+            &.open {
+                .menu-link {
+                    &.menu-toggle.active {
+                        background-color: #1e2227;
+                    }
+                }
+            }
+            .menu-link {
+                svg {
+                    stroke: $white;
+                    transition: $transition;
+                }
+                span {
+                    color: $white;
+                }
+                &:hover {
+                    background-color: #1e2227;
+                    svg {
+                        stroke: $primary;
+                    }
+                }
+            }
+        }
+    }
+    .menu-vertical .menu-item.open .menu-link.active {
+        background-color: #1e2227;
+    }
+    .activity-timeline {
+        .activity-item {
+            border-color: #1d2127;
+            .activity-wrap {
+                &::before {
+                    background-color: #252b34;
+                }
+            }
+        }
+    }
+    .terminals-chart {
+        .earning {
+            mix-blend-mode: unset;
+        }
+        .users {
+            mix-blend-mode: unset;
+        }
+        .inactive {
+            mix-blend-mode: unset;
+        }
+    }
+    .text-dark {
+        color: $white !important;
+    }
+    .bg-gray-div2 {
+        background-color: #0d1015 !important;
+    }
+    .bg-gray-div3 {
+        background-color: #0d1015 !important;
+    }
+    .bg-gray-div4 {
+        background-color: #0d1015 !important;
+    }
+    .bg-gray-div {
+        background-color: #0d1015 !important;
+    }
+    .bg-gray-div6 {
+        background-color: #0d1015 !important;
+    }
+    .bg-gray-div7 {
+        background-color: #0d1015 !important;
+    }
+    .plush-btn {
+        background-color: #14171c;
+        &:hover {
+            background-color: $primary;
+        }
+    }
+    .courses-tab {
+        .nav-item {
+            .nav-link {
+                background-color: #0d1015;
+                &.active {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+    .messages-list li.active {
+        background-color: #0d1015;
+    }
+    .bg-border-gray-light {
+        background-color: #0d1015 !important;
+    }
+    .action-opt {
+        .btn.bg {
+            background-color: #0d1015;
+        }
+    }
+    .form-check-input {
+        background-color: #0d1015;
+    }
+    .btn {
+        span {
+            color: $white;
+        }
+    }
+
+    .offcanvas {
+        background-color: #0d1015;
+    }
+    .offcanvas-header {
+        .btn-close {
+            opacity: 1;
+            filter: invert(1);
+        }
+        &.bg-body-bg {
+            background-color: #0d1015 !important;
+        }
+    }
+    .label {
+        color: $white;
+    }
+    .settings-btn {
+        color: $white;
+        span {
+            color: $white;
+        }
+    }
+    .chat-details {
+        li {
+            p {
+                background-color: #0d1015;
+            }
+            &.own-chat {
+                p {
+                    background-color: $primary;
+                    color: $white !important;
+                } 
+            }
+        }
+    }
+    .chat-call-option {
+        li {
+            button {
+                background-color: #1e2227;
+                &:hover {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+    .calendar-wrap {
+        background-color: #14171c;
+    }
+    .calendar-wrap {
+        .fc {
+            tbody {
+                tr {
+                    th {
+                        border-color: #1b212a;
+                    }
+                }
+            }
+        }
+        .fc .fc-col-header-cell-cushion {
+            color: $white;
+        }
+        .fc-theme-standard td, .calendar-wrap .fc-theme-standard th {
+            border-color: #1b212a;
+        }
+        .fc-theme-standard .fc-scrollgrid {
+            border-color: #1b212a;
+        }
+        .fc-daygrid-day-number {
+            color: #828690;
+        }
+    }
+    .bg-primary {
+        p {
+            color: $white !important;
+        }
+    }
+    .vertical-timeline {
+        li {
+            &::before {
+                background-color: #252b34;
+            }
+            &::after {
+                background-color: #252b34;
+            }
+        }
+    }
+    .faq-wrapper {
+        &.accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+            background-color: #0d1015;
+        }
+        .accordion-body {
+            background-color: #0d1015;
+            color: #828690;
+        }
+        .accordion-button {
+            background-color: #0d1015;
+        }
+    }
+    .blog-content {
+        background-color: #0d1015;
+    }
+    .blog-date {
+        background-color: #14171c;
+    }
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        background-color: #0d1015;
+        border-color: #0d1015;
+        color: $white;
+    }
+    .nav-tabs {
+        border-color: #0d1015;
+        .nav-link {
+            border: none;
+            &:hover {
+                border: none;
+            }
+        }
+    }
+    :not(pre)>code[class*=language-], pre[class*=language-] {
+        background: #1e1e1e;
+    }
+    code[class*=language-], pre[class*=language-] {
+        text-shadow: none;
+        color: $white;
+    }
+    .list-group-item {
+        border-color: #0d1015;
+    }
+    .modal-content {
+        background-color: #0d1015;
+    }
+    .modal-header {
+        border-color: #1d2127;
+    }
+    .modal-footer {
+        border-color: #1d2127;
+    }
+    .card {
+        &.bg-body {
+            background-color: #0d1015 !important;
+        }
+        &.bg-secondary {
+            background-color: #0d1015 !important;
+        }
+        &.bg-success {
+            background-color: #0d1015 !important;
+        }
+        &.bg-danger {
+            background-color: #0d1015 !important;
+        }
+        &.bg-warning {
+            background-color: #0d1015 !important;
+        }
+        &.bg-info {
+            background-color: #0d1015 !important;
+        }
+        &.bg-light {
+            background-color: #0d1015 !important;
+        }
+        &.bg-dark {
+            background-color: #0d1015 !important;
+        }
+    }
+    .toast-header {
+        background-color: #0d1015 !important;
+    }
+    div:where(.swal2-container) div:where(.swal2-popup) {
+        background-color: #0c0e11;
+    }
+    .bg-body-tertiary {
+        background-color: #0c0e11 !important;
+    }
+    .input-group-text {
+        background-color: #25292e;
+        border-color: #25292e;
+    }
+    .form-group {
+        img {
+            border-radius: 50px !important;
+        }
+    }
+    .calendar-content {
+        table {
+            background-color: #0c0e11;
+        }
+    }
+    .calendar-content th, .calendar-content td {
+        background-color: #0c0e11;
+        color: $white;
+    }
+    .calendar-content .active-date {
+        background-color: $primary;
+    }
+    .form-check .form-check-label {
+        color: $white;
+    }
+    .product-quantity {
+        border-color: #1d2127;
+        .add-to-cart-counter .minusBtn, .product-quantity .add-to-cart-counter .plusBtn {
+            background-color: #1d2127 !important;
+        }
+        .add-to-cart-counter input {
+            background-color: #1d2127;
+            border-color: #1d2127;
+        }
+    }
+    .product-quantity .add-to-cart-counter .minusBtn, .product-quantity .add-to-cart-counter .plusBtn {
+        background-color: #1d2127 !important;
+    }
+    .product-quantity.bg-e2e8f0 {
+        background-color: #2a2e34;
+    }
+    .wizard-tabs .nav-item .nav-link {
+        background-color: #0c0e11 !important;
+        &.active {
+            background-color: $primary !important;
+        }
+    }
+    .wizard-tabs2 .nav-item .nav-link {
+        background-color: #14171c;
+    }
+    .wizard-tabs2 .nav-item .nav-link span {
+        background-color: #0c0e11 !important;
+        &.active {
+            background-color: $primary !important;
+        }
+    }
+    .text-black {
+        color: $white !important;
+    }
+    #preloader {
+        background-color: #14171c;
+    }
+    #preloader .preloader .waviy span {
+        color: $white;
+    }
+    span.bg-body-bg.d-inline-block.py-1.px-3 {
+        background-color: #0c0e11 !important;
+    }
+    #SvgjsText1402 {
+        fill: #fff !important;
+    }
+    #SvgjsText1442 {
+        fill: #fff !important;
+    }
+    #SvgjsText1384 {
+        fill: #fff !important;
+    }
+    #SvgjsText1137 {
+        fill: #fff !important;
+    }
+    #SvgjsText1155 {
+        fill: #fff !important;
+    }
+    #SvgjsText1173 {
+        fill: #fff !important;
+    }
+    .d-flex.justify-content-between.mb-4.bg-gray-light.p-3.rounded-3 {
+        background-color: #262a31  !important;
+    }
+    .visit-income-farol .icon {
+        background-color: #0d1015;
+    }
+    .apexcharts-text.apexcharts-datalabel-value {
+        fill: #fff !important;
+    }
+    .apexcharts-radialbar-hollow {
+        fill: #14171c !important;
+    }
+    .apexcharts-gridline {
+        stroke: #282d33;
+    }
+    .light {
+        display: inline-block;
+    }
+    .dark {
+        display: none;
+    }
+}
