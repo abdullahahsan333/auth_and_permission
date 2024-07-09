@@ -20,12 +20,14 @@ class UserController extends Controller
     public function index()
     {
         $users = User::get();
+
         return view('role-permission.user.index', ['users' => $users]);
     }
 
     public function create()
     {
         $roles = Role::pluck('name', 'name')->all();
+
         return view('role-permission.user.create', ['roles' => $roles]);
     }
 
@@ -52,7 +54,9 @@ class UserController extends Controller
     public function edit(User $user)
     {
         $roles = Role::pluck('name', 'name')->all();
+
         $userRoles = $user->roles->pluck('name', 'name')->all();
+
         return view('role-permission.user.edit', [
             'user' => $user,
             'roles' => $roles,
@@ -74,12 +78,11 @@ class UserController extends Controller
         ];
 
         if (!empty($request->password)) {
-            $data += [
-                'password' => Hash::make($request->password),
-            ];
+            $data += ['password' => Hash::make($request->password)];
         }
 
         $user->update($data);
+
         $user->syncRoles($request->roles);
 
         return redirect('/users')->with('status', 'User Updated Successfully with roles');
@@ -88,6 +91,7 @@ class UserController extends Controller
     public function destroy($userId)
     {
         $user = User::findOrFail($userId);
+
         $user->delete();
 
         return redirect('/users')->with('status', 'User Delete Successfully');

@@ -17,7 +17,7 @@
                 <div class="card">
                     <div class="card-header">
                         <h4>Create User
-                            <a href="{{ url('users') }}" class="btn btn-danger float-end">Back</a>
+                            <a href="{{ url('users') }}" class="btn btn-danger text-white fw-semibold float-end">Back</a>
                         </h4>
                     </div>
                     <div class="card-body">
@@ -26,18 +26,25 @@
 
                             <div class="mb-3">
                                 <label for="">Name</label>
-                                <input type="text" name="name" class="form-control" />
+
+                                <input type="text" placeholder="Name" name="name" class="form-control" />
                             </div>
+
                             <div class="mb-3">
                                 <label for="">Email</label>
-                                <input type="text" name="email" class="form-control" />
+
+                                <input type="text" placeholder="Email" name="email" class="form-control" />
                             </div>
+
                             <div class="mb-3">
                                 <label for="">Password</label>
-                                <input type="text" name="password" class="form-control" />
+
+                                <input type="text" placeholder="********" name="password" class="form-control" />
                             </div>
+
                             <div class="mb-3">
                                 <label for="">Roles</label>
+
                                 <select name="roles[]" class="form-control" multiple>
                                     <option value="">Select Role</option>
                                     @foreach ($roles as $role)
@@ -45,8 +52,9 @@
                                     @endforeach
                                 </select>
                             </div>
+
                             <div class="mb-3">
-                                <button type="submit" class="btn btn-primary">Save</button>
+                                <button type="submit" class="btn text-white fw-semibold btn-primary">Save</button>
                             </div>
                         </form>
                     </div>

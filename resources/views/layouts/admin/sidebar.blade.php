@@ -5,7 +5,7 @@
             <div class="logo position-relative">
                 <a href="index.html" class="d-block text-decoration-none">
                     <img src="{{ asset('assets/images/logo-icon.png') }}" alt="logo-icon">
-                    <span class="logo-text fw-bold text-dark">Farol</span>
+                    <span class="logo-text fw-bold text-dark">Devzet</span>
                 </a>
                 <button class="sidebar-burger-menu bg-transparent p-0 border-0 opacity-0 z-n1 position-absolute top-50 end-0 translate-middle-y" id="sidebar-burger-menu">
                     <i data-feather="x"></i>
@@ -14,12 +14,15 @@
 
             <aside id="layout-menu" class="layout-menu menu-vertical menu active" data-simplebar>
                 <ul class="menu-inner">
-                    <li class="menu-item open">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle active">
-                            <i data-feather="grid" class="menu-icon tf-icons"></i>
-                            <span class="title">Dashboard</span>
-                        </a>
-                    </li>
+
+                    @can('dashboard')
+                        <li class="menu-item open">
+                            <a href="{{ url('home') }}" class="menu-link active">
+                                <i data-feather="grid" class="menu-icon tf-icons"></i>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </li>
+                    @endcan
 
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -28,25 +31,23 @@
                         </a>
 
                         <ul class="menu-sub">
-                            @if(canAccess(['view role','create role','update role','delete role']))
+                            @can('view role')
                             <li class="menu-item">
-                                <a href="{{ url('roles') }}" class="menu-link">
-                                    Role
-                                </a>
+                                <a href="{{ url('roles') }}" class="menu-link">Role</a>
                             </li>
-                            @endif
+                            @endcan
 
+                            @can('view permission')
                             <li class="menu-item">
-                                <a href="{{ url('permissions') }}" class="menu-link">
-                                    Permission
-                                </a>
+                                <a href="{{ url('permissions') }}" class="menu-link">Permission</a>
                             </li>
+                            @endcan
 
+                            @can('view user')
                             <li class="menu-item">
-                                <a href="{{ url('users') }}" class="menu-link">
-                                    User
-                                </a>
+                                <a href="{{ url('users') }}" class="menu-link">User</a>
                             </li>
+                            @endcan
                         </ul>
                     </li>
                 </ul>

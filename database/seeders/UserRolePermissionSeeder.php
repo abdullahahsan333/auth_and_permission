@@ -32,7 +32,6 @@ class UserRolePermissionSeeder extends Seeder
         Permission::create(['name' => 'update user', 'group_name' => 'User']);
         Permission::create(['name' => 'delete user', 'group_name' => 'User']);
 
-
         // Create Roles
         $superAdminRole = Role::create(['name' => 'super-admin']); //as super-admin
         $adminRole = Role::create(['name' => 'admin']);
@@ -53,38 +52,43 @@ class UserRolePermissionSeeder extends Seeder
         $userRole->givePermissionTo(['create permission', 'view permission']);
         $userRole->givePermissionTo(['create user', 'view user', 'update user']);
 
-
         // Let's Create User and assign Role to it.
-
-        $superAdminUser = User::firstOrCreate([
-            'email' => 'superadmin@gmail.com',
-        ], [
-            'name' => 'Super Admin',
-            'email' => 'superadmin@gmail.com',
-            'password' => Hash::make('12345678'),
-        ]);
+        $superAdminUser = User::firstOrCreate(
+            [
+                'email' => 'superadmin@gmail.com',
+            ],
+            [
+                'name' => 'Super Admin',
+                'email' => 'superadmin@gmail.com',
+                'password' => Hash::make('12345678'),
+            ]
+        );
 
         $superAdminUser->assignRole($superAdminRole);
 
-
-        $adminUser = User::firstOrCreate([
-            'email' => 'admin@gmail.com'
-        ], [
-            'name' => 'Admin Devzet',
-            'email' => 'admin@gmail.com',
-            'password' => Hash::make('12345678'),
-        ]);
+        $adminUser = User::firstOrCreate(
+            [
+                'email' => 'admin@gmail.com'
+            ],
+            [
+                'name' => 'Admin Devzet',
+                'email' => 'admin@gmail.com',
+                'password' => Hash::make('12345678'),
+            ]
+        );
 
         $adminUser->assignRole($adminRole);
 
-        $userRole = User::firstOrCreate([
-            'email' => 'abdullah@gmail.com'
-        ], [
-            'name' => 'User Abdullah',
-            'email' => 'abdullah@gmail.com',
-            'password' => Hash::make('12345678'),
-        ]);
-
+        $userRole = User::firstOrCreate(
+            [
+                'email' => 'abdullah@gmail.com'
+            ],
+            [
+                'name' => 'User Abdullah',
+                'email' => 'abdullah@gmail.com',
+                'password' => Hash::make('12345678'),
+            ]
+        );
         $userRole->assignRole($adminRole);
     }
 }

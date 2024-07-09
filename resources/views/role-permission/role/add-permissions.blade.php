@@ -12,8 +12,8 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h4>Role : {{ $role->name }}
-                            <a href="{{ url('roles') }}" class="btn btn-danger float-end">Back</a>
+                        <h4>Role : {{ ucwords(str_replace('-',' ',$role->name)) }}
+                            <a href="{{ url('roles') }}" class="btn btn-danger text-white fw-semibold float-end">Back</a>
                         </h4>
                     </div>
                     <div class="card-body">
@@ -27,27 +27,27 @@
                                 <span class="text-danger">{{ $message }}</span>
                                 @enderror
 
-                                <label for="">Permissions</label>
-
-                                <div class="row">
-                                    @foreach ($permissions as $permission)
-                                    <div class="col-md-2">
-                                        <label>
-                                            <input
-                                                type="checkbox"
-                                                name="permission[]"
-                                                value="{{ $permission->name }}"
-                                                {{ in_array($permission->id, $rolePermissions) ? 'checked':'' }}
-                                            />
-                                            {{ $permission->name }}
-                                        </label>
+                                @foreach ($permissions as $value)
+                                    <div class="row my-3">
+                                        <div class="col-md-2">
+                                            <lable class="label-control fs-18">
+                                                {{ $value[0]->group_name }}
+                                            </lable>
+                                        </div>
+                                        @foreach ($value as $permission )
+                                            <div class="col-md-2">
+                                                <label class="label-control" for="{{ str_replace(" ","",ucwords(trim($permission->name))) }}">
+                                                    <input type="checkbox" name="permission[]" id="{{ str_replace(" ","",ucwords(trim($permission->name))) }}" value="{{ $permission->name }}" {{ in_array($permission->id, $rolePermissions) ? 'checked':'' }} />
+                                                    {{ $permission->name }}
+                                                </label>
+                                            </div>
+                                        @endforeach
                                     </div>
-                                    @endforeach
-                                </div>
+                                @endforeach
 
                             </div>
                             <div class="mb-3">
-                                <button type="submit" class="btn btn-primary">Update</button>
+                                <button type="submit" class="btn btn-primary text-white fw-semibold">Update</button>
                             </div>
                         </form>
                     </div>

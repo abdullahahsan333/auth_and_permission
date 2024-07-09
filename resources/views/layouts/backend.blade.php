@@ -29,11 +29,12 @@
         <div class="preloader" id="preloader">
             <div class="preloader">
                 <div class="waviy position-relative">
-                    <span class="d-inline-block">F</span>
-                    <span class="d-inline-block">A</span>
-                    <span class="d-inline-block">R</span>
-                    <span class="d-inline-block">O</span>
-                    <span class="d-inline-block">L</span>
+                    <span class="d-inline-block">D</span>
+                    <span class="d-inline-block">E</span>
+                    <span class="d-inline-block">V</span>
+                    <span class="d-inline-block">Z</span>
+                    <span class="d-inline-block">E</span>
+                    <span class="d-inline-block">T</span>
                 </div>
             </div>
         </div>
@@ -60,9 +61,6 @@
             </div>
         </div>
         <!-- Start Main Content Area -->
-
-
-
 
         <!-- Link Of JS File -->
         <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>

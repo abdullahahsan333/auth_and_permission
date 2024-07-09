@@ -17,7 +17,8 @@ class PermissionController extends Controller
 
     public function index()
     {
-        $results = Permission::all()->groupBy('group_name');
+        $results = Permission::all()->groupBy('group_name')->sortBy('group_name');
+
         return view('role-permission.permission.index', ['results' => $results]);
     }
 
@@ -29,15 +30,12 @@ class PermissionController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => [
-                'required',
-                'string',
-                'unique:permissions,name'
-            ]
+            'name' => ['required', 'string', 'unique:permissions,name']
         ]);
 
         Permission::create([
-            'name' => $request->name
+            'name' => $request->name,
+            'group_name' => $request->group_name
         ]);
 
         return redirect('permissions')->with('status', 'Permission Created Successfully');
@@ -51,15 +49,12 @@ class PermissionController extends Controller
     public function update(Request $request, Permission $permission)
     {
         $request->validate([
-            'name' => [
-                'required',
-                'string',
-                'unique:permissions,name,' . $permission->id
-            ]
+            'name' => ['required', 'string', 'unique:permissions,name,' . $permission->id]
         ]);
 
         $permission->update([
-            'name' => $request->name
+            'name' => $request->name,
+            'group_name' => $request->group_name
         ]);
 
         return redirect('permissions')->with('status', 'Permission Updated Successfully');
@@ -68,7 +63,9 @@ class PermissionController extends Controller
     public function destroy($permissionId)
     {
         $permission = Permission::find($permissionId);
+
         $permission->delete();
+
         return redirect('permissions')->with('status', 'Permission Deleted Successfully');
     }
 }

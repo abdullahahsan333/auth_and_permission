@@ -17,7 +17,7 @@
                 <div class="card">
                     <div class="card-header">
                         <h4>Create Permission
-                            <a href="{{ url('permissions') }}" class="btn btn-danger float-end">Back</a>
+                            <a href="{{ url('permissions') }}" class="btn btn-danger text-white fw-semibold float-end">Back</a>
                         </h4>
                     </div>
                     <div class="card-body">
@@ -25,11 +25,17 @@
                             @csrf
 
                             <div class="mb-3">
-                                <label for="">Permission Name</label>
-                                <input type="text" name="name" class="form-control" />
+                                <label for="">Group Name</label>
+                                <input type="text" placeholder="Group Name" name="group_name" class="form-control" />
                             </div>
+
                             <div class="mb-3">
-                                <button type="submit" class="btn btn-primary">Save</button>
+                                <label for="">Permission Name</label>
+                                <input type="text" placeholder="Permission Name" name="name" class="form-control" />
+                            </div>
+
+                            <div class="mb-3">
+                                <button type="submit" class="btn text-white fw-semibold btn-primary">Save</button>
                             </div>
                         </form>
                     </div>
